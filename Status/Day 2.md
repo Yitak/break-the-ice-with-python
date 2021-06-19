@@ -362,7 +362,14 @@ my_list = input('Enter a comma separated string: ').split(",")
 my_list.sort(key=my_func)
 print(",".join(my_list))
 ```
+---
+```python
+'''Solution by Yitak Lee
+'''
+input_string = sorted(input('Enter your list of words: ').split(','))
 
+print(*(word for word in input_string), sep=',')
+```
 ---
 
 # Question 9
