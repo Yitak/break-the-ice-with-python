@@ -380,7 +380,17 @@ def count_letters_digits(counters,char_to_check):
 
 print('LETTERS {0}\nDIGITS {1}'.format(*reduce(count_letters_digits,input(),[0,0])))
 ```
+```python
+'''Solution by: Yitak Lee
+'''
+# Try to keep it as neat as possible!
+my_sentence = input('Type in your sentence: ')
 
+num_letters = len([element for element in my_sentence if element.isalpha()])
+num_numbers = len([element for element in my_sentence if element.isdigit()])
+
+print(f'LETTERS {num_letters} \nDIGITS {num_numbers}')
+```
 ---
 
 ## Conclusion
